@@ -26,10 +26,35 @@ This project connects Discord with the Chai API to create an interactive chat bo
 
 ## Running the Bot
 
-Run the bot:
+Run the bot locally:
 ```bash
 python discord_bot.py
 ```
+
+## Deployment to Railway
+
+1. Create a Railway account at [railway.app](https://railway.app/)
+
+2. Install the Railway CLI:
+   ```bash
+   npm i -g @railway/cli
+   ```
+
+3. Login to Railway:
+   ```bash
+   railway login
+   ```
+
+4. Initialize the project and deploy:
+   ```bash
+   railway init
+   railway up
+   ```
+
+5. Set environment variables in the Railway dashboard:
+   - `DISCORD_TOKEN` - Your Discord bot token
+   - `DISCORD_APP_ID` - Your Discord application ID
+   - Optionally: `CHAI_API_KEY` - If you have a custom Chai API key
 
 ## Usage
 
